@@ -85,6 +85,10 @@ export default {
         file: () => import("../../api-guidelines/async/kafka/README.md"),
         path: "/guidelines/event-guidelines/kafka",
       },
+      "Kafka E2EE": {
+        file: () => import("../../api-guidelines/async/kafka-e2ee/README.md"),
+        path: "/guidelines/event-guidelines/kafka-e2ee",
+      },
       "Compatibility": {
         file: () => import("../../api-guidelines/async/compatibility/README.md"),
         path: "/guidelines/event-guidelines/compatibility",
