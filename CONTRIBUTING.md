@@ -12,6 +12,7 @@ Skip to:
 - [Create a pull request draft](#create-a-pull-request-draft)
 - [Compose a changelog relevant pull request](#compose-a-changelog-relevant-pull-request)
 - [Review a pull request (checklist)](#review-a-pull-request-checklist)
+- [Add a new guideline](#add-a-new-guideline)
 - [Report a bug](#report-a-bug)
 - [Suggest a feature](#suggest-a-feature)
 
@@ -96,6 +97,19 @@ Changelog:
 - Is the wording used correctly and consistently, and does it fit into the overall concept?
 - Does the pull request comply with the [conventional commits spec](https://www.conventionalcommits.org/en/v1.0.0/) and does the commit message convey the purpose of the change, see also [Compose a changelog relevant pull request](#compose-a-changelog-relevant-pull-request)?
 - Will this change highly impact the way we design APIs, and should this be discussed amongst API providers/API community?
+
+## Add a new guideline
+
+You are welcome to propose a new API guideline.
+Each API guideline requires a unique rule ID, which must be noted in the front matter of the file.
+A rule ID consists of an "R" followed by 6 digits, for example, `R200023`.
+To identify an unused and thus available rule ID, run the following command:
+
+```bash
+grep -r "^id: R" api-guidelines | rev | cut -d" " -f1 | rev | sort | less
+```
+
+You can choose any rule ID that is not included in the list.
 
 ## Report a bug
 
