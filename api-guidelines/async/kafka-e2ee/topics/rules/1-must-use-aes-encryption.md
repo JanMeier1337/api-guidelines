@@ -49,7 +49,7 @@ dec.init(
         new SecretKeySpec(key, "AES"),
         new GCMParameterSpec(128, iv));
 byte[] decrypted = dec.doFinal(encryptedPayload);
-String payloadInPlainText = new String(decrypted, StandardCharsets.UTF_8);
+String payloadInPlainText = new String(decrypted, StandardCharsets.UTF_8);:w
 ```
 
 ## Typescript algorithm example
